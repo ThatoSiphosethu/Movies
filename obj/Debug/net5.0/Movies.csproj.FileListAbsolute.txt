@@ -1,0 +1,16 @@
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.exe
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.deps.json
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.runtimeconfig.json
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.dll
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\ref\Movies.dll
+C:\Users\Dell\source\repos\Movies\Movies\bin\Debug\net5.0\Movies.pdb
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.AssemblyInfo.cs
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.dll
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\ref\Movies.dll
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.pdb
+C:\Users\Dell\source\repos\Movies\Movies\obj\Debug\net5.0\Movies.genruntimeconfig.cache
