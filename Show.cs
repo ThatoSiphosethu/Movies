@@ -11,6 +11,7 @@ namespace Movies
         public int Season { get; set; }
         public int Episode { get; set; }
         public string[] Writers { get; set; }
+        public int Id { get; internal set; }
 
         public override string Display()
         {

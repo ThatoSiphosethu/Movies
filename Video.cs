@@ -11,6 +11,7 @@ namespace Movies
         public string Format { get; set; }
         public int Length { get; set; }
         public int[] Regions { get; set; }
+        public object Id { get; internal set; }
 
         public override string Display()
         {
