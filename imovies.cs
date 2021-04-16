@@ -1,23 +1,15 @@
 using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Movies
+namespace Movielibrary
 {
-    public static class imovies //: Actions
+    public interface IMovies 
     {
-        Series series = new Series()
-        {
-            ID = 1,
-            Title = "Spidy",
-            Season = "two"
+        void ReadMovies(Movie movie);
 
-        } 
-            string strResultJson = JsonConvert.SerializeObject(series);
-            File.WriteAllText(@"",);
-            Console.WriteLine(strResultJson);
+        void AddMovie(Movie movie);
+    }
 
-            strResultJson = String.Empty;
-            strResultJson = File.ReadAllText(@"");
-            JsonConvert.DeserializeObject<>();
-        }
+    
 }

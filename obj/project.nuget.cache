@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SDTCqU/6roUGAEfQPOCoQ71k2gnbKhG6F0pXYOpf/3Ppbh81L9vnDeK2vWxVyamTvXe7LpREQ8/A+g6uhpfUgA==",
+  "dgSpecHash": "h8waKpb+W0w7UHGXB4IPzIrSSSy4QaCXWUkpIe2sew10HLIIVOktOoXO5gM2HHHk0gAw6magQydf5YxbJpF1Mg==",
   "success": true,
   "projectFilePath": "c:\\Users\\Owner\\Downloads\\Movies\\Movies.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
   ],
   "logs": []

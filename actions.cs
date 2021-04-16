@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Movies;
 
-namespace Movies
+namespace Movielibrary
 {
-    class Actions
+    class Actions 
     {
         public List<Movie> Movies {get; set;}
+       List<Movie> movies = new List<Movie>();
         private static string File1 = "movies.csv";
         public List<Show> Shows {get; set;}
         private static string File2 = "shows.csv";
@@ -18,7 +18,7 @@ namespace Movies
 
         public Actions(){
             Movies = new List<Movie>();
-            Movie movie = new Movie();   
+            Movie movie = new Movie();
             Movies.Add(movie);
 
             Shows = new List<Show>();
@@ -29,7 +29,9 @@ namespace Movies
             Video video = new Video();   
             Videos.Add(video);
         }
-       
+       //interfaces
+
+
         // generate questions
         public void ReadMovies()
         {
@@ -42,6 +44,19 @@ namespace Movies
             {
                 string line = reader.ReadLine();
                 Console.WriteLine(line);
+            }
+
+            Console.WriteLine("\n1.Back\n2.Exit");
+            int option = Int32.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    Console.Clear();
+                    Menu.Questions();
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -69,8 +84,36 @@ namespace Movies
             while (option == "Y");
 
             string newGenres = string.Join("|", genres);
-            sw.WriteLine("{0},{1},{2}", movie.Id, movie.Title, movie.Genres);
+            sw.WriteLine("{0},{1},{2}", movie.Id, Title, movie.Genres);
+            Movie movieSasa = new Movie();
+            //movieSasa.setMovieItem( movie.Id, Title);
+            //movies.Add(movieSasa);
             sw.Close();
+
+           // movieSasa.getMovies();
+        }
+
+        //static void Main(string[] args)
+        //{
+           // Movie movieSasa = new Movie();
+           // movieSasa.setMovieItem(1, "SASA DON'T C#");
+           // Console.WriteLine(movieSasa.getMovies());
+           // Console.ReadKey();
+        //}
+
+        internal void AddShows()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void AddVideos()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void AddMovie()
+        {
+            throw new NotImplementedException();
         }
 
         // new showID
@@ -106,6 +149,18 @@ namespace Movies
                 string line = reader.ReadLine();
                 Console.WriteLine(line);
             }
+            Console.WriteLine("\n1.Back\n2.Exit");
+            int option = Int32.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    Console.Clear();
+                    Menu.Questions();
+                    break;
+                default:
+                    break;
+            }
             reader.Close();
          }
 
@@ -121,7 +176,7 @@ namespace Movies
             Console.WriteLine("Input season number: ");
             int Season = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Inpt episode number: ");
+            Console.WriteLine("Input episode number: ");
             int Episode = Int32.Parse(Console.ReadLine());
 
             
@@ -177,10 +232,22 @@ namespace Movies
                 string line = reader.ReadLine();
                 Console.WriteLine(line);
             }
+            Console.WriteLine("\n1.Back\n2.Exit");
+            int option = Int32.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    Console.Clear();
+                    Menu.Questions();
+                    break;
+                default:
+                    break;
+            }
         }
 
         // Add  new movie
-        public void AddVide(Video video)
+        public void AddVideo(Video video)
         {
             video.Id = videosLastID() + 1;
             StreamWriter sw = new StreamWriter(File3, true);

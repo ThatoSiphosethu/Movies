@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Microsoft.Extensions.DependencyInjection;
 
 
 //using System.Web.Mvc. Name.Controllers
@@ -24,33 +25,21 @@ using Newtonsoft.Json;
        // }
    // }
 //}
-namespace Movies
+namespace Movielibrary
 {
     class Program
     {
         
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
-            Menu.Choice();
+            //var serviceProvider = new ServiceCollection()
+               // .AddSingleton<>();
+               // .BuildServiceProvider();
 
-            Series series = new Series()
-        {
-            ID = 1,
-            Title = "Spidy",
-            Season = "two"
-
-        };
-            string strResultJson = JsonConvert.SerializeObject(series);
-            File.WriteAllText(@"movies.json",strResultJson);
-            Console.WriteLine("Stored");
-
-            strResultJson = String.Empty;
-            strResultJson = File.ReadAllText(@"movies.json");
-            Series finalView = JsonConvert.DeserializeObject<Series>(strResultJson);
-            Console.WriteLine(finalView.ToString());
             
-        }
+            Menu.Questions();
+
+         
     
        // Public Class HomeController
 
@@ -67,19 +56,6 @@ namespace Movies
    // End Class
     }
 
-    internal class Series
-    {
-        public string Title { get; set; }
-        public string Season { get; set; }
-        public int ID { get; set; }
 
-        public override string ToString()
-        {
-            return string.Format("Series Info:\n\tID: {0}, \n\tTitle: {1}, \n\tSeason: {3}, ", ID, Title, Season);
-        }
-
-
-             
-        
-    }
+}
 }

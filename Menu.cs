@@ -5,78 +5,86 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Movies
+namespace Movielibrary
 {
     
-    class Menu
+    public class Menu : IMovies
     {
-        public static void Choice()
+        public static void Questions()
         {
-            Console.WriteLine("1. View\n2. Add\n3. Exit");
-            int option = Option();
+           int option = 0;
+           Console.WriteLine("1. View\n2. Add\n3. Exit");
 
-            switch (option)
+            do
             {
-                case 1: ViewMenu();
-                    break;
-                case 2: AddMenu();
-                    break;
-                case 3: return;
-                    break;
-                default: Console.WriteLine("Try again\n");
-                    Choice();
-                    break;
-            }
-        }
-
-        public static void ViewMenu()
-        {
-            Console.WriteLine("1. Movie\n2. Video\n3. Show\n4. Back\n5. Exit");
-            int option = Option();
-
-            switch (option)
-            {
-                case 1:
-                   ShowMovies();
-                    break;
-                case 2:
-                   ShowVideos();
-                    break;
-                case 3:
-                    ShowShows;
-                    break;
-                case 4: Back();
-                    break;
-                case 5:  return;
-                    break;
-                default:
-                    Console.WriteLine("Try again\n");
-                    ViewMenu();
-                    break;
-            }
-        }
-
-
-        public static void AddMenu() 
-        {
-        }
-
-        public static int Option()
-        {
-            int option;
-            while (true)
-            {
-                try
+                option = Int32.Parse(Console.ReadLine());
+                if (option == 1)
                 {
-                    option = Int32.Parse(Console.ReadLine());
-                    break;
+                    Menu ViewMenu = new Menu();
+                    Actions actions = new Actions();
+                   
+                    Console.Clear();
+                    Console.WriteLine("1. Movie\n2. Video\n3. Show\n4. Back\n5. Exit");
+                     int choice = Int32.Parse(Console.ReadLine());
+                    if (choice == 1)
+                    {
+                        actions.ReadMovies();
+                    }
+                    else if (choice == 2)
+                    {
+                        actions.ReadShows();
+                    }
+                    else if (choice == 3)
+                    {
+                       actions.ReadVideos(); 
+                    }
+                    else if(choice == 4)
+                    {
+                        return;
+                    }
                 }
-                catch (FormatException e)
+                else if (option == 2)
                 {
-                    throw;
+                    Console.Clear();
+                    Menu AddMenu = new Menu();
+                    Console.WriteLine("Add into 1. Movie\n. 2 Video\n. 3 Show\n ");
+                    int choice = 0;
+                    Actions actions = new Actions();
+                    if (choice == 1)
+                    {
+                        actions.AddMovie();
+                    }
+                    else if (choice == 2)
+                    {
+                        actions.AddVideos();  
+    
+                    }
+                    else if (choice == 3)
+                    {
+                        actions.AddShows();
+                    }
+                  
                 }
+
+                else if (option == 3)
+                {
+                    Menu exit = new Menu();
+                }
+            } while (option > 3 || option < 1);
+            
+            
             }
-            return option;
+
+        public void AddMovie(Movie movie)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ReadMovies(Movie movie)
+        {
+            throw new NotImplementedException();
         }
     }
-}
+
+    }    
+

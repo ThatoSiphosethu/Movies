@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Movies
+namespace Movielibrary
 {
-    abstract class Type
+    public abstract class Type
     {
         public int ID { get; set; }
         public string Title { get; set; }
-        public abstract string Display();
+       public abstract string Display();
+
+        //public abstract void setMovieItem(int mID, String mName);
+        //public abstract String getMovies();
     }
 }
