@@ -34,3 +34,4 @@ C:\Users\Owner\Downloads\Movies\obj\Debug\net5.0\Movies.dll
 C:\Users\Owner\Downloads\Movies\obj\Debug\net5.0\ref\Movies.dll
 C:\Users\Owner\Downloads\Movies\obj\Debug\net5.0\Movies.pdb
 C:\Users\Owner\Downloads\Movies\obj\Debug\net5.0\Movies.genruntimeconfig.cache
+C:\Users\Owner\Downloads\Movies\bin\Debug\net5.0\CsvHelper.dll

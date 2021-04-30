@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace Movielibrary
 {
     
-    public class Menu : IMovies
-    {
+    public class Menu 
+        {
         public static void Questions()
         {
            int option = 0;
